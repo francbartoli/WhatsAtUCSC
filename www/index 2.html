@@ -1,0 +1,47 @@
+<html> 
+	<head> 
+	<title>What's @ UCSC</title> 
+    	<!-- Includes for BOTH JQuery and JQuery Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	
+
+	
+	<!-- Includes for Leaflet Mapping and related functionality-->
+	<link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css">
+	<script src="js/leaflet.js"></script>
+	<script src="js/jquery.url.js"></script>
+	
+	<!-- include for Mustache Templating -->
+	<script src="js/mustache.js"></script>
+	<script src="js/jQuery-Mustache.js"></script>
+
+</head> 
+<body>
+	
+<div data-role="page" id="home" data-theme="b">
+	
+	<div data-role="header">
+		<h1>What's @ UCSC</h1>
+		<a href="#" rel="external" data-icon="info" data-iconpos="notext" class="ui-btn-right" data-theme="b"></a>
+	</div>
+	
+	<div data-role="content">		
+		<div class="choice_list">
+			<h1>What would you like to do?</h1>
+			
+			<ul data-role="listview" data-inset="true">
+				<li><a href="choose_dept.html" rel="external"><h3>Choose Department</h3></a></li>
+				<li><a href="choose_building.html"rel="external"><h3>Choose Building</h3></a></li>
+				<li><a href="map.html" rel="external"><h3>Campus Map</h3></a></li>
+				<li><a href="choose_events.html" rel="external"><h3>Campus Events</h3></a></li>
+				<li><a href="choose_local.html" rel="external"><h3>Local Events</h3></a></li>
+			</ul>
+		</div> <!-- /choice_list -->
+	</div> <!-- /content -->
+</div> <!-- /page -->
+</body>
+</html>

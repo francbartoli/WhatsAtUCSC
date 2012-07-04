@@ -1,0 +1,45 @@
+<html> 
+	<head> 
+	<title>Campus Events</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="cordova-1.7.0.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.jfeed.js"></script> 
+    <script type="text/javascript" src="js/ChildBrowser.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    
+            
+</head> 
+<body>
+    
+    <div data-role="page" data-title="Events" id="intropage">
+        <div data-role="header" data-add-back-btn="true">
+			<a href="index.html" rel="external" data-icon="arrow-l"  data-direction="reverse" class="ui-btn-left" data-theme="b">Back</a>
+            <h3>Campus Events RSS Reader</h3>
+			<a href="index.html" data-rel="back" data-icon="home" data-iconpos="notext"  data-direction="reverse" class="ui-btn-right" data-theme="b">Home</a>
+        </div>
+        <div data-role="content" id="introContent">
+            <p id="introContentNoFeeds" style="display:none">
+			Welcome to the RSS Reader Application. You do not currently have
+			any RSS Feeds. Please use the "Add Feed" button below to begin.
+            </p>
+            <ul id="feedList" data-role="listview" data-inset="true" data-split-icon="delete"></ul>
+            
+            <a href="addfeed.html" data-role="button" data-theme="b">Add Feed</a>
+            
+        </div> <!-- /content -->
+    </div> <!-- /page -->
+    
+<script>
+    $("#intropage").bind("pageinit", function(e) { 
+                         init();	
+                        });
+    
+   </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+	 page, #map {
+        width: 100%;
+        height: 480px;
+        margin: 0;
+        padding: 0;
+      }
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+	 page, #map {
+        width: 100%;
+        height: 480px;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+	 page, #map {
+        width: 100%;
+        height: 1004px;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+	 page, #map {
+        width: 100%;
+        height: 748px;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+

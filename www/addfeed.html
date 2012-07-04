@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Feed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div data-role="page" id="addfeedpage" data-add-back-btn="true">
+        
+        <div data-role="header" data-add-back-btn="true">
+            <a href="index.html" rel="external" data-icon="arrow-l"  data-direction="reverse" class="ui-btn-left" data-theme="b">Back</a>
+            <h3>Add Feed</h3>
+            <a href="index.html" data-rel="back" data-icon="home" data-iconpos="notext"  data-direction="reverse" class="ui-btn-right" data-theme="b">Home</a>
+        </div>
+        
+        <div data-role="content">
+            <form id="addFeedForm">
+                <!--
+                <div data-role="fieldcontain">        
+                    <label for="feedname">Feed Name:</label>        
+                    <input type="text" id="feedname" value=""  />        
+                </div>	
+                <div data-role="fieldcontain">        
+                    <label for="feedurl">Feed URL:</label>        
+                    <input type="text" id="feedurl" value=""  />        
+                </div>	
+                 -->
+                <div data-role="fieldcontain">
+                    <label for="selectFeedurl" class="select">Select a Feed:</label>
+                    <select name="selectFeedurl" id="selectFeedurl">
+                        <option value="" selected>Select a Feed</option>
+                        <option value="http://www1.ucsc.edu/news_events/calendar/rss/ThisWeek.ashx">This Week's Calendar</option>
+                        <option value="http://events-manager.ucsc.edu/content/events-this-week/rss.xml">Events Manager This Week</option>
+                        <option value="http://news.ucsc.edu/rss/arts.xml">Arts</option>
+                        <option value="http://news.ucsc.edu/rss/engineering.xml">Engineering</option>
+                        <option value="http://news.ucsc.edu/rss/humanities.xml">Humanities</option>
+                        <option value="http://news.ucsc.edu/rss/library.xml">Library</option>
+                        <option value="http://news.ucsc.edu/rss/physical_biological.xml">Physical and Biological Sciences</option>
+                        <option value="http://news.ucsc.edu/rss/sports.xml">Sports</option>
+                        <option value="http://news.ucsc.edu/rss/social_sciences.xml">Social Sciences</option>
+                    </select>
+					<input type="submit" value="Add Feed" data-theme="b">
+                </div> <!-- /end fieldcontain -->
+				</form>
+			</div> <!-- /content -->		
+    </div> <!-- /page -->
+</body>
+</html>
